@@ -1,0 +1,133 @@
+:root {
+  --mainColor: #ffffff;
+  --secondaryColor: #ffffff;
+  --ascentColor: #4b4b4b;
+}
+
+body {
+  background-color: var(--mainColor);
+  font-family: "Nunito", sans-serif;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.about img {
+  width: 10%;
+  margin: 10px;
+  filter: grayscale(30%);
+}
+
+/* Navbar */
+.navbar .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  transition: all 0.5s ease;
+  transform: scale(0);
+}
+
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before {
+  transform: scale(1);
+}
+
+.jumbotron {
+  padding-top: 6rem;
+}
+
+.about {
+  padding: 4rem 4rem;
+}
+
+.projects {
+  padding: 4rem 4rem;
+}
+
+#about .card {
+  background-color: #f0f0f0;
+  height: 200px;
+  width: auto;
+  margin-top: 4rem;
+}
+
+.jumbotron .cv {
+  text-decoration: none;
+  color: black;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.certificate {
+  padding: 4rem;
+}
+
+.projects {
+  padding: 4rem;
+}
+
+.certificate img {
+  height: 100px;
+  width: auto;
+  margin: 10px;
+}
+
+.projects .card {
+  margin: 10px;
+}
+
+/* 
+
+.card {
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+
+  display: grid;
+  place-items: center;
+  grid-template-areas: main;
+
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.card > * {
+  grid-area: main;
+}
+
+.card > .image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  transition: transform 400ms, filter 400ms;
+}
+
+card > .text {
+  opacity: 0;
+  color: white;
+  font-size: 1.8em;
+
+  transition: opacity 400ms, transform 400ms;
+}
+
+.card:is(:hover, :focus) > .image {
+  transform: scale(1.1);
+  filter: brightness(0.4);
+}
+
+.card:is(:hover, :focus) > .text {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+ */
