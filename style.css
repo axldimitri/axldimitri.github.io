@@ -36,7 +36,7 @@ footer a {
   transform: scale(1);
 }
 
-.jumbotron {
+.home {
   padding-top: 6rem;
 }
 
@@ -55,7 +55,12 @@ footer a {
   margin-top: 4rem;
 }
 
-.jumbotron .cv {
+.home .cv {
+  text-decoration: none;
+  color: black;
+}
+
+.home .scroll {
   text-decoration: none;
   color: black;
 }
@@ -75,7 +80,7 @@ footer a {
 }
 
 .certificate img {
-  height: 100px;
+  height: 80px;
   width: auto;
   margin: 10px;
 }
