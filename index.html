@@ -5,9 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" defer />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -20,6 +28,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
@@ -48,64 +57,185 @@
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- home -->
-    <section class="home text-center md" id="home">
-      <img src="img/Profil.jpeg" alt="Foto Profil" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-6 mt-4">Ax'l Dimitri Josua Tumimomor</h1>
-      <p class="lead">UI/UX Designer | Web Developer</p>
-      <a href="https://www.instagram.com/axldimitri" target="_blank" class="btn btn-outline-dark btn-sm mx-1 md"><i class="bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/axldimitri/" target="_blank" class="btn btn-outline-dark btn-sm mx-1 md"><i class="bi-linkedin"></i></a>
-      <a href="https://medium.com/@axldimitri16" target="_blank" class="btn btn-outline-dark btn-sm mx-1 md"><i class="bi-medium"></i></a>
-      <a href="mailto:axldimitri16@gmail.com" target="_blank" class="btn btn-outline-dark btn-sm mx-1 md"><i class="bi-envelope-fill"></i></a>
-      <br />
-      <br />
-      <a href="https://drive.google.com/file/d/1tKoD0uTFI-T6dQdVfKaHL_Gi6DVfw6w7/view?usp=sharing" target="_blank" class="cv md">Curriculum Vitae</a>
-      <br />
-      <br />
-      <br />
-      <a href="#about" class="scroll md">
-        <p>Scroll Down</p>
-        <i class="bi-mouse"></i>
-      </a>
-    </section>
-    <!-- Akhir home -->
+    <!-- Home -->
+    <section class="jumbotron" id="home">
+      <div class="jumbotron__content-left">
+        <div class="" style="height: 100%">
+          <img class="img-profil" src="img/foto-profil.JPG" alt="Foto Profil" />
+        </div>
+        <div class="" style="height: 100%">
+          <div class="jumbotron__text-name">Ax'l Dimitri Josua Tumimomor</div>
 
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row justify-content-center text-center mt-4 mb-3 md">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-          <div class="row justify-content-center fs-6 text-center">
-            <div class="col-md-7 mt-4">
-              <p>Hello there, i'm Ax'l!👋🏻</p>
-              <p>
-                I'm a Junior-level UI Designer and Front End Developer, Information System fresh graduate with 6 months of experience designing and building responsive web design and mobile apps. Proficient with HTML, CSS, Javascript, and
-                SQL. In 6 months i've finished 2 UI projects with 92% positive feedback including 2 wireframe, and 2 phone app.
-              </p>
-              <p>Work Aside, I'm always curious, and want to learn something new. Sometimes i spend my free time watching new Youtube or TV Series.</p>
-              <br />
-              <br />
-              <p>
-                <strong>My Skills</strong>
-              </p>
-              <img src="img/html.png" alt="" />
-              <img src="img/css.png" alt="" />
-              <img src="img/javascript.png" alt="" />
-              <img src="img/figma.png" alt="" />
-              <img src="img/photoshop 1.png" alt="" />
-              <img src="img/illustrator 2.png" alt="" />
-              <img src="img/corel.png" alt="" />
+          <div class="jumbotron__text-jobtitle">Web Developer | UI Designer</div>
+
+          <!-- <div class="d-flex flex-row" style="align-items: center">
+            <div class="d-flex flex-column">
+              <i class="bi-linkedin" style="width: 16px"></i>
             </div>
+            <div class="d-flex flex-column">
+              <div class="jumbotron__text-desc">LinkedIn</div>
+            </div>
+          </div> -->
+
+          <a href="https://www.linkedin.com/in/axldimitri/" target="_blank" class="btn btn-outline-dark btn-sm mx-1 md"><i class="bi-linkedin"></i></a>
+          <a href="mailto:axldimitri16@gmail.com" target="_blank" class="btn btn-outline-dark btn-sm mx-1 md"><i class="bi-envelope-fill"></i></a>
+        </div>
+      </div>
+      <div class="jumbotron__content-right">
+        <div class="" style="height: 100%">
+          <div class="jumbotron__text-title">Hello there, i'm Ax'l!👋🏻</div>
+          <div class="jumbotron__text-desc">
+            I'm a web developer and UI designer with 1.5 years of experience. During my time in high school, while using my smartphone, I was truly captivated by the compact and stylish UI design of applications. This fascination led me to
+            the decision to learn how to create effective user interfaces using Figma and mastering the art of slicing them into websites.
+          </div>
+          <div class="jumbotron__text-desc">
+            Outside of work, I'm always curious and eager to learn something new. I have a keen interest in sports, and economics. I tend to spend my free time engaging in various sports activities and exploring new TV series.
           </div>
         </div>
       </div>
     </section>
-    <!-- Akhir About -->
 
-    <!-- Certificate -->
-    <section class="certificate" id="certificate">
+    <!-- Project -->
+    <section class="project">
+      <div class="project__content-left">
+        <div class="jumbotron__text-name">Projects</div>
+        <div class="jumbotron__text-desc">
+          In this space, I'm delighted to present a selection of projects that showcase my dedication to combining innovative design with precise technical execution. Each project represents a thoughtful exploration of unique challenges,
+          and I'm eager to share the results with you. Please feel free to browse! ✌🏼
+        </div>
+      </div>
+      <div class="project__content-right">
+        <div class="box__project">
+          <div class="">
+            <img src="img/TN-Waste4Change.png" class="img-project" alt="Waste4Change" />
+          </div>
+          <div class="project__list">
+              <div class="jumbotron__text-title">Waste4Change</div>
+              <div class="jumbotron__text-desc">During the internship with Skilvul, we designed a mobile application user interface for Waste4Change that offers responsible and reliable waste management solutions.</div>
+
+              <div class="d-flex flex-row" style="align-items: center; margin-bottom: 10px;">
+                <div class="d-flex flex-column">
+                  <div class="project__text-app">Supporting application(s):</div>
+                </div>
+                <div class="" style="margin-left:10px;">
+                  <img src="img/figma.png" style="width: 20px;" alt="Waste4Change" />
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-column" style="margin-right: 5px">
+                  <a href="https://medium.com/@axldimitri16/ux-ui-case-study-waste4change-case-study-bebd991add37" target="_blank" class="btn btn-outline-dark btn-sm md"
+                    ></i>Documentation<i class="bi bi-box-arrow-up-right" style="margin-left:5px;"></i
+                  ></a>
+                </div>
+                <div class="d-flex flex-column"style="margin-left: 5px">
+                  <a
+                    href="https://www.figma.com/proto/PHgdqSPKgHoCD6yYwCpafN/Design?node-id=208%3A1304&scaling=scale-down&page-id=49%3A241&starting-point-node-id=369%3A3167&show-proto-sidebar=1"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm md"
+                    >Prototype<i class="bi bi-box-arrow-up-right" style="margin-left:5px;"></i></a
+                  >
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="box__project">
+          <div class="">
+            <img src="img/TN-Sinou.png" class="img-project" alt="Waste4Change" />
+          </div>
+          <div class="project__list">
+              <div class="jumbotron__text-title">Sinou</div>
+              <div class="jumbotron__text-desc">During the internship with Skilvul, i've designed a mobile application user interface that provides online course as one of the challenge to complete the internship program.</div>
+              
+              <div class="d-flex flex-row" style="align-items: center; margin-bottom: 10px;">
+                <div class="d-flex flex-column">
+                  <div class="project__text-app">Supporting application(s):</div>
+                </div>
+                <div class="" style="margin-left:10px;">
+                  <img src="img/figma.png" style="width: 20px;" alt="Waste4Change" />
+                </div>
+              </div>
+
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-column" style="margin-right: 5px">
+                  <a href="https://medium.com/@axldimitri16/ux-writing-sinou-4dacf014dac5" target="_blank" class="btn btn-outline-dark btn-sm md"
+                    ></i>Documentation<i class="bi bi-box-arrow-up-right" style="margin-left:5px;"></i
+                  ></a>
+                </div>
+                <div class="d-flex flex-column"style="margin-left: 5px">
+                  <a
+                    href="https://www.figma.com/proto/FOgl4VZUNEfFSxt5E8vTxH/Axl-Dimitri-Josua-Tumimomor---SVI---UIX%5B29%5D?node-id=56%3A228&scaling=scale-down&page-id=37%3A348&starting-point-node-id=117%3A2283&show-proto-sidebar=1"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm md"
+                    >Prototype<i class="bi bi-box-arrow-up-right" style="margin-left:5px;"></i></a
+                  >
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="box__project">
+          <div class="">
+            <img src="img/dimitrijosh.png" class="img-project" alt="Waste4Change" />
+          </div>
+          <div class="project__list">
+              <div class="jumbotron__text-title">DimitriJosh</div>
+              <div class="jumbotron__text-desc">Well, this is a personal project, which also served as my side business during my college days 😅. In a nutshell, I created a service specializing in crafting custom acrylic cases for mechanical keyboards, along with offering various other services.</div>
+              
+              <div class="d-flex flex-row" style="align-items: center; margin-bottom: 10px;">
+                <div class="d-flex flex-column">
+                  <div class="project__text-app">Supporting application(s):</div>
+                </div>
+                <div class="" style="margin-left:10px;">
+                  <img src="img/corel.png" style="width: 20px;" alt="Waste4Change" />
+                </div>
+                <div class="" style="margin-left:10px;">
+                  <img src="img/illustrator 2.png" style="width: 20px;" alt="Waste4Change" />
+                </div>
+              </div>
+              
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-column" style="margin-right: 5px">
+                  <a href="https://www.tokopedia.com/dimitrijosh" target="_blank" class="btn btn-outline-dark btn-sm md"
+                    ></i>Details<i class="bi bi-box-arrow-up-right" style="margin-left:5px;"></i
+                  ></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Project -->
+
+    <!-- Footer -->
+    <footer class="footer__container">
+      <div class="footer__desc">
+        <div class="footer__text">Thank you for taking the time to explore my portfolio! If you have any questions, feedback, or exciting opportunities to discuss, I'm just a message away. Let's connect and make something amazing together. Cheers to the possibilities ahead!</div>
+        <div class="d-flex flex-row" style="margin-top:100px;">
+          <div class="d-flex flex-column">
+            <i class="bi-linkedin" style="color:#fff; margin-right: 12px;"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="footer__text"><a href="https://www.linkedin.com/in/axldimitri/" target="_blank">Ax'l Dimitri Josua Tumimomor</a></div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row">
+          <div class="d-flex flex-column">
+            <i class="bi-envelope-fill" style="color:#fff; margin-right: 12px;"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="footer__text"><a href="mailto:axldimitri16@gmail.com" target="_blank">axldimitri16@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+    <a id="back-to-top" href="#home" class="btn btn-dark btn-lg back-to-top rounded-circle btn-sm" role="button"><i class="bi-arrow-up"></i></a>
+    <script src="js.js"></script>
+
+        <!-- Certificate -->
+    <!-- <section class="certificate" id="certificate">
       <div class="container">
         <div class="row justify-content-center text-center mt-4 mb-3 md">
           <div class="col">
@@ -147,79 +277,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Certificate -->
-
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Projects</h2>
-          </div>
-        </div>
-        <div class="col mb-3 text-center">
-          <button class="btn btn-default filter-button" data-filter="all">All</button>
-          <button class="btn btn-default filter-button" data-filter="uidesign">UI Design</button>
-          <button class="btn btn-default filter-button" data-filter="logodesign">Logo</button>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3 mb-3 text-center mx-4 filter center uidesign">
-            <div class="card border-0" style="width: 18rem">
-              <img src="img/TN-Waste4Change.png" class="card-img-top" alt="Waste4Change" />
-              <div class="card-body">
-                <h5 class="card-title">Waste4Change</h5>
-                <p class="card-text">A mobile application that provides responsible and reliable waste management solutions</p>
-                <a href="https://medium.com/@axldimitri16/ux-ui-case-study-waste4change-case-study-bebd991add37" class="btn btn-outline-dark btn-sm md">Details</a>
-                <a
-                  href="https://www.figma.com/proto/PHgdqSPKgHoCD6yYwCpafN/Design?node-id=208%3A1304&scaling=scale-down&page-id=49%3A241&starting-point-node-id=369%3A3167&show-proto-sidebar=1"
-                  target="_blank"
-                  class="btn btn-outline-secondary btn-sm md"
-                  >Prototype</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3 text-center mx-4 filter center uidesign">
-            <div class="card border-0" style="width: 18rem">
-              <img src="img/TN-Sinou.png" class="card-img-top" alt="sinou" />
-              <div class="card-body">
-                <h5 class="card-title">Sinou</h5>
-                <p class="card-text">A mobile application that provides online course.</p>
-                <a href="https://medium.com/@axldimitri16/ux-writing-sinou-4dacf014dac5" class="btn btn-outline-dark btn-sm md mt-4">Details</a>
-                <a
-                  href="https://www.figma.com/proto/FOgl4VZUNEfFSxt5E8vTxH/Axl-Dimitri-Josua-Tumimomor---SVI---UIX%5B29%5D?node-id=56%3A228&scaling=scale-down&page-id=37%3A348&starting-point-node-id=117%3A2283&show-proto-sidebar=1"
-                  target="_blank"
-                  class="btn btn-outline-secondary btn-sm md mt-4"
-                  >Prototype</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3 text-center mx-4 filter center logodesign">
-            <div class="card border-0" style="width: 18rem">
-              <img src="img/dimitrijosh.png" class="card-img-top" alt="dimitrijosh" />
-              <div class="card-body">
-                <h5 class="card-title">DimitriJosh</h5>
-                <p class="card-text">An online store that provide various mechanical keyboard product and services.</p>
-                <a href="https://www.tokopedia.com/dimitrijosh" target="_blank" class="btn btn-outline-dark btn-sm md">Visit</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Projects -->
-
-    <!-- Footer -->
-    <footer class="py-5">
-      <div class="container">
-        <p class="text-dark text-center">created by <a href="https://instagram.com/axldimitri" target="_blank" class="text-dark">axldimitri</a></p>
-      </div>
-    </footer>
-    <!-- Akhir Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <a id="back-to-top" href="#home" class="btn btn-dark btn-lg back-to-top rounded-circle btn-sm" role="button"><i class="bi-arrow-up"></i></a>
-    <script src="js.js"></script>
   </body>
 </html>
